@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git clone https://github.com/kaz-ogiwara/covid19/
+cp covid19/data/summary.csv .
+rm -rf covid19
+
