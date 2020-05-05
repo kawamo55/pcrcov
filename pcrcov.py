@@ -9,9 +9,9 @@ from sklearn.kernel_ridge import KernelRidge as knlr
 df = pd.read_csv('summary.csv')
 va = df.values
 # データSkip数
-skip=20
+skip=30
 # 平均幅
-wid=7
+wid=14
 # 重傷者倍率
 zb = 1
 # 感染者数(日別)
@@ -33,8 +33,8 @@ yt=np.array([])
 yz=np.array([])
 
 # 平均加工
-#for i in range(wid,n):
-for i in range(wid,n,wid):
+for i in range(wid,n):
+#for i in range(wid,n,wid):
     xt = np.append(xt,np.mean(xx[i-wid:i]))
     yt = np.append(yt,np.mean(yy[i-wid:i]))
     yz = np.append(yz,zb*np.mean(y2[i-wid:i]))
