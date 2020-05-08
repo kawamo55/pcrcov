@@ -14,13 +14,13 @@ wid=7
 # 倍率
 by1 = 5 
 # 倍率
-by2 = 5
+by2 = 100
 # ratio倍率
 by3 = 10000
 # 感染者数(日別)
 yy1 = np.diff(va[skip:,3])
 # 重傷者数(日別)
-yy2 = np.diff(va[skip:,10])
+yy2 = np.diff(va[skip:,12])
 # PCR検査数(日別)
 yy3 = np.diff(va[skip:,4])
 # 日数
