@@ -18,7 +18,7 @@ by2 = 100
 # 感染者数(日別)
 yy1 = np.diff(va[skip:,3])
 # 重傷者数(日別)
-yy2 = np.diff(va[skip:,12])
+yy2 = np.diff(va[skip:,6])
 # PCR検査数(日別)
 yy3 = np.diff(va[skip:,4])
 # 日数

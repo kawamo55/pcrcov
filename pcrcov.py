@@ -17,7 +17,7 @@ zb = 1
 # 感染者数(日別)
 yy = np.diff(va[skip:,3])
 # 重傷者数(日別)
-y2 = np.diff(va[skip:,12])
+y2 = np.diff(va[skip:,6])
 # PCR検査数(日別)
 xx = np.diff(va[skip:,4])
 # MAXPCR
